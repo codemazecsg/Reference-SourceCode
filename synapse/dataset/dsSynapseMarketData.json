@@ -1,0 +1,22 @@
+{
+	"name": "dsSynapseMarketData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ref-synapse-gen-wkspace01-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "marketdata",
+				"fileSystem": "root"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
