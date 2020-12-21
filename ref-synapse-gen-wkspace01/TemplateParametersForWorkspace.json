@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "ref-synapse-gen-wkspace01"
+		},
+		"ref-synapse-gen-wkspace01-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"lsMarketData_accountKey": {
+			"value": ""
+		},
+		"ref-synapse-gen-wkspace01-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://refsynapsegenadls01.dfs.core.windows.net"
+		},
+		"lsMarketData_properties_typeProperties_url": {
+			"value": "https://marketdata01.dfs.core.windows.net"
+		}
+	}
+}
