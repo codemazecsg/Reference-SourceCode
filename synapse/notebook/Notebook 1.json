@@ -74,6 +74,7 @@
 			{
 				"cell_type": "code",
 				"metadata": {
+					"outputCollapsed": true,
 					"diagram": {
 						"activateDiagramType": 1,
 						"chartConfig": {
@@ -101,7 +102,14 @@
 					"%%sql\n",
 					"SELECT * FROM MARKETDATA"
 				],
-				"execution_count": 4
+				"execution_count": 0
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"spark.sql(\"desc formatted MarketData\").filter(\"col_name=='Location'\").collect()[0].data_type"
+				],
+				"execution_count": 7
 			}
 		]
 	}
